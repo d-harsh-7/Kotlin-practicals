@@ -1,0 +1,34 @@
+
+fun main(){
+    var a=10;
+    var b=20;
+    var c='a';
+    var z='z'-'a';
+    var result="the sum of $a and $b is ${a+b}";
+    println(z)
+    println("\$ c")
+    var i=0;
+    while(i<5){
+        println("Harsh")
+        i=i+1
+    }
+    var s="""Harsh
+ Harsh
+  Harsh
+   Harsh
+    Harsh"""
+    var name2="""
+       Harsh
+    Harsh  Harsh
+       Harsh""".trimIndent()
+    print(name2)
+    //Arrays in kotlin
+    val numbers= arrayOf(1,2,3,4,5);
+    //using lambda
+    val squares=Array(5){i->i*i}
+    for(nums in 0..3){
+        print(nums)
+    }
+    print("\n"+squares[2])
+    //for loop variation in
+}
