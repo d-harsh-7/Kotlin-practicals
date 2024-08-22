@@ -1,0 +1,11 @@
+fun main(){
+    var a="hi"
+    var b:String=a as String
+    var d:String?=a as? String
+    println(d)
+    var num:Int?=a as? Int
+    if(num==null){
+        print("not casted")
+    }
+
+}
