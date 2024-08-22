@@ -1,4 +1,25 @@
 fun main(){
+    val numbers= arrayOf(arrayOf(1,2,3),arrayOf(23,45,68));
+    //using lambda
+    val squares=Array(5){i->i*i}
+    println("")
+//    for(i in 0..squares.size-1){
+//        print(squares[i])
+//    }
+    for(x in numbers){
+        for (j in x){
+            print(j)
+            print(' ')
+        }
+        println()
+    }
+    //for loop variation in
+    //to covert a numeric dat type to another type ,kotlin provides a set of functions
+    //toByte() toShort() toInt() toLong() toFloat() toDouble() toChar()
+    //error for typecasting is invalid type casting ...how to cast a variable to other data type use variable.functionname()
+    val ab:Int=100;
+    val cd:Long=ab.toLong()
+    print(cd)
     var a="hi"
     var b:String=a as String
     var d:String?=a as? String
