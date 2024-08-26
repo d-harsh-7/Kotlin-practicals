@@ -1,0 +1,56 @@
+fun main(){
+    //classcastexception
+    //Topic Operator
+    //bitwise operatior
+    //shl(bits)...shr(bits)
+     //bitwise
+    var a=10;
+    var b=20;
+    println("sum of $a and $b :${a+b}")
+    println("subtract of $a and $b :${a-b}")
+    println("multiply of $a and $b :${a*b}")
+    println("division of $a and $b :${a/b}")
+    println("Modulo of $a and $b :${a%b}")
+    //comparsion operator
+    val isEqual=a==b
+    println(" $a == $b :${isEqual}")
+    println(" $a != $b :${!isEqual}")
+    println("$a >= $b :${a>=b}")
+    println(" $a <= $b :${a<=b}")
+    println(" $a > $b :${a>b}")
+    println(" $a < $b :${a<b}")
+    //assignment operator
+    var k=a;
+    k+=b
+    println(" $a +=  $b :${k}")
+    a=k
+    k-=b
+    println(" $a -=  $b :${k}")
+    a=k
+    k*=b
+    println("$a *=  $b :${k}")
+    a=k
+    k/=b
+    println(" $a /=  $b :${k}")
+    a=k
+    k%=b
+    println(" $a %= $b :${k}")
+    //Unary operator
+    var unk=10;
+    println("+$unk : ${+unk}")
+    println("++$unk : ${++unk}")
+    println("--$unk : ${--unk}")
+    val e=5
+    val f=3
+    val andBitwise=e and f;//for bitwiseAnd use  and <- //use logicalAnd use && <-this symbol
+    println("Bitwise of $e and $f is : $andBitwise")
+
+
+    //range and iterators
+    val range =1..5;
+    println("Range :$range")
+    for (i in range){
+        println(i);
+    }
+
+}
