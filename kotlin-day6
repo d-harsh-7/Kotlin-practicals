@@ -1,0 +1,44 @@
+fun main(){
+    for( i in  0..3){//until to exlude upper bound
+        print("$i \t")
+    }
+    println()
+    for( i in  0 until 3){//until to exlude upper bound
+        print("$i \t")
+    }
+    //syntax for collectuions
+    println()
+    var arr=arrayOf("Harsh","Dubey")
+    for(item in arr.indices){
+        print("$item=>${arr[item]} ")
+    }
+    //downTo for reverse  iterating
+    println()
+    for(i in 5 downTo 1 step 2){
+        print("$i ")
+    }
+    //while loop
+    var j=5
+    while(j>0){
+        println(j)
+        j-- //j ko i kmm kr rhe hai
+    }
+    do {
+        j++;
+        println(j)
+    }while(j<5)
+    var k=5;
+    do{
+        println(k)
+        k--;
+
+
+    }while(k>0)
+    var it=1;
+    do{
+        println(it);
+        it++
+    }while(it<6);
+
+
+}
