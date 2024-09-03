@@ -1,0 +1,63 @@
+open class Rectangle(val a:Double,val b:Double){
+    fun area():Double{
+        return a*b;
+    }
+    open fun dis(){
+        println("area of rectangle is ${area()}")
+
+    }
+}
+class Square(val side:Double):Rectangle(side,side){
+    override fun dis() {
+        println("area of square ${area()}")
+    }
+}
+fun main(){
+    // syntax classDerivedname:baseClassName()
+    // open is key word just like public
+    var c=Square(8.0);
+    c.dis()
+}
+class Person{
+    var name:String;
+    var age:Int;
+    constructor(x:String,y:Int){
+        this.name=x;
+        this.age=y;
+    }
+    constructor(x:String){
+        this.name=x;
+        this.age=0;
+    }
+    constructor(){
+        this.name="Rahul";
+        this.age=32;
+    }
+    fun intro(){
+        println("my name is ${this.name} and my age is ${this.age}")
+    }
+}
+class person1(var name:String,var age:Int){
+    constructor(x:String):this(){
+        this.name=x;
+        this.age=0;
+    }
+    constructor():this("Rahul",50)
+    fun intro(){
+        println("my name is ${this.name} and my age is ${this.age}")
+    }
+
+
+}
+
+
+fun main(){
+// a secondary constructor is an additional way to create an object. it is useful when you need
+// to set up a object with different parameter or extra logic
+    var a=Person();
+    println(a.name);
+    a.intro();
+    var b=person1("Heena");
+    b.intro()
+
+}
